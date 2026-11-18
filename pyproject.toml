@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aula-f2058"
+version = "0.1.0"
+description = "macOS configuration tool for the AULA Wind F2058 keyboard"
+requires-python = ">=3.9"
+
+[project.scripts]
+aula = "aula.cli:main"
+
+[tool.setuptools]
+packages = ["aula"]
